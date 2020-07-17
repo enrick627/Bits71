@@ -30,9 +30,10 @@ namespace Bits
         /// Voeg een klant toe aan de lijst
         /// </summary>
         /// <param name="Klanttoevoeg">de naam voor het toevoegen van klanten</param>
-        public void AddKlant(string Klanttoevoeg = Klanten)
+        public void AddKlant()
         {
-            
+            List<string> Klant = new List<string>();
+            Klant.Add("");
         }
         
     }
