@@ -38,6 +38,10 @@
             this.textBox_toevoegen = new System.Windows.Forms.TextBox();
             this.label_bewerken = new System.Windows.Forms.Label();
             this.textBox_bewerken = new System.Windows.Forms.TextBox();
+            this.button_toevoeg = new System.Windows.Forms.Button();
+            this.button1_verwijder = new System.Windows.Forms.Button();
+            this.button_zoek = new System.Windows.Forms.Button();
+            this.button_bewerken = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -48,6 +52,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(762, 196);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button_lijstopvragen
             // 
@@ -57,6 +62,7 @@
             this.button_lijstopvragen.TabIndex = 1;
             this.button_lijstopvragen.Text = "Lijst";
             this.button_lijstopvragen.UseVisualStyleBackColor = true;
+            this.button_lijstopvragen.Click += new System.EventHandler(this.button_lijstopvragen_Click);
             // 
             // textBox_zoeknaam
             // 
@@ -105,11 +111,12 @@
             this.textBox_toevoegen.Name = "textBox_toevoegen";
             this.textBox_toevoegen.Size = new System.Drawing.Size(100, 22);
             this.textBox_toevoegen.TabIndex = 11;
+            this.textBox_toevoegen.TextChanged += new System.EventHandler(this.textBox_toevoegen_TextChanged);
             // 
             // label_bewerken
             // 
             this.label_bewerken.AutoSize = true;
-            this.label_bewerken.Location = new System.Drawing.Point(356, 109);
+            this.label_bewerken.Location = new System.Drawing.Point(402, 110);
             this.label_bewerken.Name = "label_bewerken";
             this.label_bewerken.Size = new System.Drawing.Size(70, 17);
             this.label_bewerken.TabIndex = 12;
@@ -117,16 +124,57 @@
             // 
             // textBox_bewerken
             // 
-            this.textBox_bewerken.Location = new System.Drawing.Point(478, 104);
+            this.textBox_bewerken.Location = new System.Drawing.Point(505, 108);
             this.textBox_bewerken.Name = "textBox_bewerken";
             this.textBox_bewerken.Size = new System.Drawing.Size(100, 22);
             this.textBox_bewerken.TabIndex = 13;
+            // 
+            // button_toevoeg
+            // 
+            this.button_toevoeg.Location = new System.Drawing.Point(289, 175);
+            this.button_toevoeg.Name = "button_toevoeg";
+            this.button_toevoeg.Size = new System.Drawing.Size(75, 23);
+            this.button_toevoeg.TabIndex = 14;
+            this.button_toevoeg.Text = "voeg toe";
+            this.button_toevoeg.UseVisualStyleBackColor = true;
+            this.button_toevoeg.Click += new System.EventHandler(this.button_toevoeg_Click);
+            // 
+            // button1_verwijder
+            // 
+            this.button1_verwijder.Location = new System.Drawing.Point(289, 144);
+            this.button1_verwijder.Name = "button1_verwijder";
+            this.button1_verwijder.Size = new System.Drawing.Size(75, 23);
+            this.button1_verwijder.TabIndex = 15;
+            this.button1_verwijder.Text = "Verwijder";
+            this.button1_verwijder.UseVisualStyleBackColor = true;
+            // 
+            // button_zoek
+            // 
+            this.button_zoek.Location = new System.Drawing.Point(289, 107);
+            this.button_zoek.Name = "button_zoek";
+            this.button_zoek.Size = new System.Drawing.Size(75, 23);
+            this.button_zoek.TabIndex = 16;
+            this.button_zoek.Text = "zoek";
+            this.button_zoek.UseVisualStyleBackColor = true;
+            // 
+            // button_bewerken
+            // 
+            this.button_bewerken.Location = new System.Drawing.Point(658, 109);
+            this.button_bewerken.Name = "button_bewerken";
+            this.button_bewerken.Size = new System.Drawing.Size(90, 23);
+            this.button_bewerken.TabIndex = 17;
+            this.button_bewerken.Text = "Bewerken";
+            this.button_bewerken.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button_bewerken);
+            this.Controls.Add(this.button_zoek);
+            this.Controls.Add(this.button1_verwijder);
+            this.Controls.Add(this.button_toevoeg);
             this.Controls.Add(this.textBox_bewerken);
             this.Controls.Add(this.label_bewerken);
             this.Controls.Add(this.textBox_toevoegen);
@@ -156,6 +204,10 @@
         private System.Windows.Forms.TextBox textBox_toevoegen;
         private System.Windows.Forms.Label label_bewerken;
         private System.Windows.Forms.TextBox textBox_bewerken;
+        private System.Windows.Forms.Button button_toevoeg;
+        private System.Windows.Forms.Button button1_verwijder;
+        private System.Windows.Forms.Button button_zoek;
+        private System.Windows.Forms.Button button_bewerken;
     }
 }
 

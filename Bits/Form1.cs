@@ -16,5 +16,29 @@ namespace Bits
         {
             InitializeComponent();
         }
+
+        private void textBox_toevoegen_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_lijstopvragen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_toevoeg_Click(object sender, EventArgs e)
+        {
+            Administratie Toevoeg = new Administratie();
+            string helper;
+            
+            textBox_toevoegen.Text = Toevoeg.AddKlant();
+            listBox1.Items.Add(textBox_toevoegen.Text);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,30 +8,21 @@ namespace Bits
 {
     public class Administratie
     {
-        /// <summary>
-        /// Alle werknemers
-        /// </summary>
-        public List<string> Werknemers()
+        public List<Klant> Klanten
         {
-            List<string> Werknemer = new List<string>();
-            return Werknemer;
+            get; set;
         }
 
-        /// <summary>
-        /// Alle klanten
-        /// </summary>
-        /// <param name="Klant"></param>
-        public List<string> Klanten()
+        public List<Werknemer> Werknemers
         {
-            List<string> Klant = new List<string>();
-            return Klant;
-
+            get; set;
         }
+
         /// <summary>
         /// Voeg een klant toe aan de lijst
         /// </summary>
         /// <param name="Klanttoevoeg">de naam voor het toevoegen van klanten</param>
-        public void AddKlant()
+        public string AddKlant()
         {
             List<string> Klant = new List<string>();
             Klant.Add("");
@@ -81,6 +72,9 @@ namespace Bits
                 kandit = false;
                 MessageBox.Show("Klant werd niet gevonden");
             }
+            return Getklant();
         }
+
+       
     }
 }
