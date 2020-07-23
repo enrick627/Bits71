@@ -26,19 +26,21 @@ namespace Bits
         {
             List<string> Klant = new List<string>();
             Klant.Add("");
+            return AddKlant();
         }
         /// <summary>
         /// hier worden de gegevens van de klant aangepast moet treu geven als lukt anders false
         /// </summary>
-        public void Editklant()
+        public bool Editklant()
         {
+
             List<string> Klant = new List<string>();
-            
+            return Editklant();
         }
         /// <summary>
         /// hier word de klant verwijdert
         /// </summary>
-        public void Deleteklant()
+        public bool Deleteklant()
         {
             List<string> Klant = new List<string>();
             bool kandit = false;
@@ -52,13 +54,13 @@ namespace Bits
                 kandit = false;
 
             }
-            
-            
+
+            return Deleteklant();
         }
         /// <summary>
         /// klant opzoeken in lijst
         /// </summary>
-        public Guid Getklant() 
+        public Klant Getklant()
         {
             List<string> Klant = new List<string>();
             bool kandit = true;
@@ -75,6 +77,39 @@ namespace Bits
             return Getklant();
         }
 
-       
+        /// <summary>
+        /// voeg werknemer toe
+        /// </summary>
+        public void AddWerknemer()
+        {
+
+            List<string> Werknemer = new List<string>();
+            
+           
+        }
+
+        /// <summary>
+        /// pas de gegevens aan
+        /// </summary>
+        public bool EditWerknemer()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <summary>
+        /// verwijder de werknemer
+        /// </summary>
+        public bool Deletewerknemer()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        /// <summary>
+        /// zoek een werknemer
+        /// </summary>
+        public Werknemer GetWerknemer()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
