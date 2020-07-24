@@ -18,15 +18,12 @@ namespace Bits
             get; set;
         }
 
-        /// <summary>
-        /// Voeg een klant toe aan de lijst
-        /// </summary>
-        /// <param name="Klanttoevoeg">de naam voor het toevoegen van klanten</param>
-        public string AddKlant()
+        
+        public string AddKlant
         {
-            List<string> Klant = new List<string>();
-            Klant.Add("");
-            return AddKlant();
+
+            get;set;
+            
         }
         /// <summary>
         /// hier worden de gegevens van de klant aangepast moet treu geven als lukt anders false
@@ -35,6 +32,9 @@ namespace Bits
         {
 
             List<string> Klant = new List<string>();
+            Klant.Add("brooks koepka");
+            Klant.Clear();
+            Klant.Add("geen idee");
             return Editklant();
         }
         /// <summary>

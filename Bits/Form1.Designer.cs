@@ -48,9 +48,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(26, 222);
+            this.listBox1.Location = new System.Drawing.Point(12, 287);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(762, 196);
+            this.listBox1.Size = new System.Drawing.Size(762, 308);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -116,7 +116,7 @@
             // label_bewerken
             // 
             this.label_bewerken.AutoSize = true;
-            this.label_bewerken.Location = new System.Drawing.Point(402, 110);
+            this.label_bewerken.Location = new System.Drawing.Point(16, 216);
             this.label_bewerken.Name = "label_bewerken";
             this.label_bewerken.Size = new System.Drawing.Size(70, 17);
             this.label_bewerken.TabIndex = 12;
@@ -124,10 +124,11 @@
             // 
             // textBox_bewerken
             // 
-            this.textBox_bewerken.Location = new System.Drawing.Point(505, 108);
+            this.textBox_bewerken.Location = new System.Drawing.Point(157, 216);
             this.textBox_bewerken.Name = "textBox_bewerken";
             this.textBox_bewerken.Size = new System.Drawing.Size(100, 22);
             this.textBox_bewerken.TabIndex = 13;
+            this.textBox_bewerken.TextChanged += new System.EventHandler(this.textBox_bewerken_TextChanged);
             // 
             // button_toevoeg
             // 
@@ -159,7 +160,7 @@
             // 
             // button_bewerken
             // 
-            this.button_bewerken.Location = new System.Drawing.Point(658, 109);
+            this.button_bewerken.Location = new System.Drawing.Point(289, 216);
             this.button_bewerken.Name = "button_bewerken";
             this.button_bewerken.Size = new System.Drawing.Size(90, 23);
             this.button_bewerken.TabIndex = 17;
@@ -170,7 +171,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1380, 619);
             this.Controls.Add(this.button_bewerken);
             this.Controls.Add(this.button_zoek);
             this.Controls.Add(this.button1_verwijder);

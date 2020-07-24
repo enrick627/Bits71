@@ -31,12 +31,17 @@ namespace Bits
         {
             Administratie Toevoeg = new Administratie();
             string helper;
-            
-            textBox_toevoegen.Text = Toevoeg.AddKlant();
-            listBox1.Items.Add(textBox_toevoegen.Text);
+
+            Toevoeg.AddKlant = textBox_toevoegen.Text;
+            listBox1.Items.Add(Toevoeg.AddKlant);
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_bewerken_TextChanged(object sender, EventArgs e)
         {
 
         }
